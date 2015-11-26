@@ -11,7 +11,7 @@ public class OverviewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_overview);
+        setContentView(R.layout.blank);
 
 
 //        Intent intent = new Intent(this, LoginActivity.class);
