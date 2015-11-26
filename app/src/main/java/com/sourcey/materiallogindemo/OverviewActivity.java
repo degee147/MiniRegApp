@@ -2,7 +2,9 @@ package com.sourcey.materiallogindemo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.ButterKnife;
 
@@ -45,4 +47,7 @@ public class OverviewActivity extends AppCompatActivity {
 //
     }
 
+    public void registerClickHandler(View view) {
+        Toast.makeText(OverviewActivity.this, "Congrats! Your registration is successful", Toast.LENGTH_LONG).show();
+    }
 }

@@ -21,7 +21,7 @@
         <activity
             android:name="com.sourcey.materiallogindemo.OverviewActivity"
             android:parentActivityName=".SignupActivity"
-            android:theme="@style/AppTheme.Dark" />
+            />
     </application>
 
 </manifest>
