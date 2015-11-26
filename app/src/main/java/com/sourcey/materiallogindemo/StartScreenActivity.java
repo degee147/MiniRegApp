@@ -10,8 +10,8 @@ import android.widget.Button;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class LoginActivity extends AppCompatActivity {
-    private static final String TAG = "LoginActivity";
+public class StartScreenActivity extends AppCompatActivity {
+    private static final String TAG = "StartScreenActivity";
     private static final int REQUEST_SIGNUP = 0;
 
    // @InjectView(R.id.input_email) EditText _emailText;
@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_startscreen);
         ButterKnife.inject(this);
 
         _loginButton.setOnClickListener(new View.OnClickListener() {
@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //login();
 
-                Intent detailIntent = new Intent(LoginActivity.this, SignupActivity.class);
+                Intent detailIntent = new Intent(StartScreenActivity.this, SignupActivity.class);
                 startActivity(detailIntent);
             }
         });
@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
 //
 //        _loginButton.setEnabled(false);
 //
-//        final ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this,
+//        final ProgressDialog progressDialog = new ProgressDialog(StartScreenActivity.this,
 //                R.style.AppTheme_Dark_Dialog);
 //        progressDialog.setIndeterminate(true);
 //        progressDialog.setMessage("Authenticating...");

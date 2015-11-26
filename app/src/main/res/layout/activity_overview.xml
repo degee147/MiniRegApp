@@ -9,195 +9,174 @@
     tools:context=".MainActivity">
 
 
-
     <TextView
         android:id="@+id/headline2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="@string/register_here"
+        android:text="@string/confirm_your_info"
         android:textSize="@dimen/headline_size" />
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <TextView
+        android:id="@+id/tvFirstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/first_name"
-        android:id="@+id/tvFirstName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/headline2"
         android:layout_marginTop="20dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:text="@string/first_name" />
 
-    <EditText
+    <TextView
+        android:id="@+id/tvFirstName2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etFirstName"
         android:layout_alignBaseline="@+id/tvFirstName"
+        android:layout_toEndOf="@+id/tvFirstName"
         android:layout_toRightOf="@id/tvFirstName"
-        android:layout_toEndOf="@+id/tvFirstName"/>
-
-
-
+        android:layout_marginLeft="30dp"
+        android:text="@string/first_name" />
 
 
 
     <TextView
+        android:id="@+id/tvLastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/last_name"
-        android:id="@+id/tvLastName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/tvFirstName"
         android:layout_marginTop="20dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:text="@string/last_name" />
 
-    <EditText
+    <TextView
+        android:id="@+id/tvLastName2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etLastName"
         android:layout_alignBaseline="@+id/tvLastName"
+        android:layout_toEndOf="@+id/tvFirstName"
         android:layout_toRightOf="@id/tvFirstName"
-        android:layout_toEndOf="@+id/tvFirstName"/>
-
-
-
-
-
+        android:layout_marginLeft="30dp"
+        android:text="@string/first_name" />
 
 
     <TextView
+        android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/email"
-        android:id="@+id/tvEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/tvLastName"
         android:layout_marginTop="20dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
-
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:id="@+id/etEmail"
-        android:layout_alignBaseline="@+id/tvEmail"
-        android:layout_toRightOf="@id/tvFirstName"
-        android:layout_toEndOf="@+id/tvFirstName"/>
-
-
-
-
+        android:text="@string/email" />
 
 
     <TextView
+        android:id="@+id/tvEmail2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvEmail"
+        android:layout_toEndOf="@+id/tvFirstName"
+        android:layout_toRightOf="@id/tvFirstName"
+        android:layout_marginLeft="30dp"
+        android:text="@string/first_name" />
+
+
+    <TextView
+        android:id="@+id/tvCountry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/country"
-        android:id="@+id/tvCountry"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/tvEmail"
         android:layout_marginTop="20dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:text="@string/country" />
 
-    <EditText
+    <TextView
+        android:id="@+id/tvCountry2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etCountry"
         android:layout_alignBaseline="@+id/tvCountry"
+        android:layout_toEndOf="@+id/tvFirstName"
         android:layout_toRightOf="@id/tvFirstName"
-        android:layout_toEndOf="@+id/tvFirstName"/>
-
-
-
+        android:layout_marginLeft="30dp"
+        android:text="@string/first_name" />
 
 
     <TextView
+        android:id="@+id/tvGender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/gender"
-        android:id="@+id/tvGender"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/tvCountry"
         android:layout_marginTop="20dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:text="@string/gender" />
 
-    <EditText
+    <TextView
+        android:id="@+id/tvGender2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etGender"
         android:layout_alignBaseline="@+id/tvGender"
+        android:layout_toEndOf="@+id/tvFirstName"
         android:layout_toRightOf="@id/tvFirstName"
-        android:layout_toEndOf="@+id/tvFirstName"/>
-
+        android:layout_marginLeft="30dp"
+        android:text="@string/first_name" />
 
 
 
     <TextView
+        android:id="@+id/tvUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/username"
-        android:id="@+id/tvUsername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/tvGender"
         android:layout_marginTop="20dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:text="@string/username" />
 
-    <EditText
+    <TextView
+        android:id="@+id/tvUsername2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etUsername"
         android:layout_alignBaseline="@+id/tvUsername"
+        android:layout_toEndOf="@+id/tvFirstName"
         android:layout_toRightOf="@id/tvFirstName"
-        android:layout_toEndOf="@+id/tvFirstName"/>
+        android:layout_marginLeft="30dp"
+        android:text="@string/first_name" />
 
 
     <TextView
+        android:id="@+id/tvPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/password"
-        android:id="@+id/tvPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/tvUsername"
         android:layout_marginTop="20dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:text="@string/password" />
 
-    <EditText
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/tvPassword2"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/etPassword"
         android:layout_alignBaseline="@+id/tvPassword"
-        android:layout_toRightOf="@+id/tvFirstName"
-        android:layout_toEndOf="@+id/tvFirstName" />
-
-
+        android:layout_toEndOf="@+id/tvFirstName"
+        android:layout_toRightOf="@id/tvFirstName"
+        android:layout_marginLeft="30dp"
+        android:textStyle="italic"
+        android:text="@string/chosen_password" />
 
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/register"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"/>
+        android:text="@string/register" />
 
 
 </RelativeLayout>

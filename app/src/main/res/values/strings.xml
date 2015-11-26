@@ -21,5 +21,7 @@
 
     <string name="register_here">Register Here</string>
     <string name="register">Register</string>
+    <string name="confirm_your_info">Confirm Your Account</string>
+    <string name="chosen_password">Your Chosen password</string>
 
 </resources>
