@@ -18,7 +18,10 @@
         </activity>
         <activity android:name=".StartScreenActivity" android:theme="@style/AppTheme.Dark" />
         <activity android:name="com.sourcey.materiallogindemo.SignupActivity" android:theme="@style/AppTheme.Dark" />
-        <activity android:name="com.sourcey.materiallogindemo.OverviewActivity" android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name="com.sourcey.materiallogindemo.OverviewActivity"
+            android:parentActivityName=".SignupActivity"
+            android:theme="@style/AppTheme.Dark" />
     </application>
 
 </manifest>
