@@ -23,23 +23,23 @@ public class OverviewActivity extends AppCompatActivity {
 
         String lastname = getIntent().getStringExtra(SignupActivity.LASTNAME_VALUE);
         TextView tvTitle2 = (TextView) findViewById(R.id.tvLastName2);
-        tvTitle.setText(lastname);
+        tvTitle2.setText(lastname);
 
         String email = getIntent().getStringExtra(SignupActivity.EMAIL_VALUE);
         TextView tvTitle3 = (TextView) findViewById(R.id.tvEmail2);
-        tvTitle2.setText(email);
+        tvTitle3.setText(email);
 
         String country = getIntent().getStringExtra(SignupActivity.COUNTRY_VALUE);
         TextView tvTitle4 = (TextView) findViewById(R.id.tvCountry2);
-        tvTitle3.setText(country);
+        tvTitle4.setText(country);
 
-        String gender = getIntent().getStringExtra(SignupActivity.COUNTRY_VALUE);
+        String gender = getIntent().getStringExtra(SignupActivity.GENDER_VALUE);
         TextView tvTitle5 = (TextView) findViewById(R.id.tvGender2);
-        tvTitle3.setText(gender);
+        tvTitle5.setText(gender);
 
         String username = getIntent().getStringExtra(SignupActivity.USERNAME_VALUE);
         TextView tvTitle6 = (TextView) findViewById(R.id.tvUsername2);
-        tvTitle4.setText(username);
+        tvTitle6.setText(username);
 
 
 //
